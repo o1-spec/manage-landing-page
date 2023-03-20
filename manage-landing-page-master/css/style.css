@@ -1,0 +1,468 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+/*
+.pattern{
+    position: absolute;
+    right: -20%;
+    top: -40%;
+    z-index: -1;
+}*/
+
+.nav{
+    padding: 4rem 1rem 3rem 1rem;
+    position: relative;
+}
+
+.pattern{
+    position: absolute;
+    right: -30%;
+    top: -120%;
+    z-index: -1;
+}
+
+.container{
+    max-width: 110rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container img{
+    width: 12rem;
+    height: 2.4rem;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-link{
+    color: hsl(228, 39%, 23%);
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.nav-btn a{
+    color: #fff;
+    font-size: 1.5rem;
+    background-color: hsl(12, 88%, 59%);
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 1.2rem;
+    transition: all 0.5s;
+}
+
+.nav-btn a:hover{
+    background-color: hsl(13, 100%, 96%);
+    color: hsl(12, 88%, 59%);
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    z-index: 2;
+    position: absolute;
+    right: 8%;
+}
+
+
+/*********************************/
+/******* MOBILE LINKS*************/
+/*********************************/
+.hidden{
+    display: none;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: all 0.5s;
+  }
+
+.mobile-links{
+    position: absolute;
+    z-index: 10;
+    left: 5%;
+    top: 90%;
+    height: 300%;
+    gap: 3rem;
+    display: flex;
+    width: 90%;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    transition: all 1s;
+}
+
+.mobile-link{
+    color: hsl(228, 39%, 23%);
+    font-size: 1.4rem;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.close{
+    display: none;
+}
+
+
+/*********************************/
+/***** SECTION HERO***************/
+/*********************************/
+.section-hero{
+    max-width: 110rem;
+    margin: auto;
+    padding: 7rem 1rem 4rem 1rem;
+    display: flex;
+    gap: 8rem;
+    justify-content: space-between;
+}
+
+.hero-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.hero-head{
+    font-size: 5rem;
+    font-weight: 700;
+    color: hsl(228, 39%, 23%);
+}
+
+.hero-text{
+    font-size: 1.6rem;
+    color: hsl(227, 12%, 61%);
+    letter-spacing: 1.2;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+}
+
+.hero-btn a{
+    color: #fff;
+    font-size: 1.5rem;
+    background-color: hsl(12, 88%, 59%);
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 1.2rem;
+    transition: all 0.5s;
+}
+
+.hero-btn a:hover{
+    background-color: hsl(13, 100%, 96%);
+    color: hsl(12, 88%, 59%);
+}
+
+.hero-img img{
+    width: 90%;
+}
+
+/********************************/
+/******* SECTION-DIFFERENT ******/
+/********************************/
+.section-different{
+    position: relative;
+    max-width: 110rem;
+    margin: auto;
+    padding: 7rem 1rem 4rem 1rem;
+}
+
+.different{
+    display: flex;
+    justify-content: space-between;
+    gap: 10rem;
+}
+
+.different-head h4{
+    color: hsl(228, 39%, 23%);
+    font-size: 3.6rem;
+    margin-bottom: 3rem;
+}
+
+.different-head p{
+    font-size: 1.6rem;
+    color: hsl(227, 12%, 61%);
+    line-height: 1.7;
+}
+
+.different-boxes{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.different-box{
+    display: grid;
+    grid-template-columns: 1fr 17fr;
+    gap:1.4rem;
+}
+
+.dif-num{
+    background-color: hsl(12, 88%, 59%);
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 22px;
+    height: 2.6rem;
+}
+
+.different-box h6{
+    color: hsl(228, 39%, 23%);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.different-box p{
+    color: hsl(227, 12%, 61%);
+    font-size: 1.4rem;
+    grid-column: 2;
+    line-height: 1.7;
+}
+
+.pattern-2{
+    z-index: -1;
+    position: absolute;
+    left: -40%;
+    top: 40%;
+}
+
+/******************************/
+/**** TESTIMONIAL SECTION******/
+/******************************/
+.section-testimonials{
+    padding: 8rem 1rem 4rem 1rem;
+}
+
+.testimonials h4{
+    text-align: center;
+    font-size: 3.6rem;
+    color: hsl(228, 39%, 23%);
+    margin-bottom: 9rem;
+}
+
+.testimonial-boxes{
+    margin-bottom: 4rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.testimonial-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+    background-color: hsl(0, 0%, 98%);
+    border-radius: 7px;
+    padding: 1.5rem 2.5rem;
+    padding-bottom: 2.2rem;
+    position: relative;
+}
+
+.testimonial-box img{
+    top: -20%;
+    position: absolute;
+    width: 6rem;
+}
+
+.testimonial-box p{
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 1.6rem;
+    color: hsl(228, 39%, 23%);
+}
+
+.testimonial-box span{
+    text-align: center;
+    color: hsl(227, 12%, 61%);
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+.none{
+    display: none;
+}
+
+.testimonial-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-btn a{
+    color: #fff;
+    font-size: 1.5rem;
+    background-color: hsl(12, 88%, 59%);
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 1.2rem;
+    transition: all 0.5s;
+}
+
+.testimonial-btn a:hover{
+    background-color: hsl(13, 100%, 96%);
+    color: hsl(12, 88%, 59%);
+}
+
+/***********************************/
+/******* NEWSLETTER-SECTION*********/
+/***********************************/
+.section-newsletter{
+    padding-top: 12rem;
+}
+
+.news{
+    background-color: hsl(12, 88%, 59%);
+    position: relative;
+    overflow: hidden;
+}
+
+.news img{
+    position: absolute;
+    width: 44rem;
+    color: hsl(12, 88%, 59%);
+    right: 30%;
+    opacity: 0.2;
+}
+
+.newsletter{
+    margin: auto;
+    max-width: 110rem;
+    padding: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newsletter h3{
+    font-size: 4rem;
+    color: #fff;
+}
+
+.newsletter-btn{
+    color: hsl(12, 88%, 59%);
+    font-size: 1.5rem;
+    background-color: #fff;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 1.2rem;
+    transition: all 0.5s;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter-btn:hover{
+    background-color: hsl(12, 88%, 59%);
+    color: #fff;
+}
+
+
+/******************************/
+/***** FOOTER SECTION**********/
+/******************************/
+.section-footer{
+    color: hsl(227, 12%, 61%);
+    background-color: hsl(233, 12%, 13%);
+    padding: 3rem 1rem;
+}
+
+.ooter-head{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.footer-head img{
+    padding-bottom: 4.6rem;
+}
+
+.footer-grid{
+    max-width: 110rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.media{
+    display: flex;
+    gap: 1rem;
+    grid-row: 4;
+}
+
+.media a{
+    text-decoration: none;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.footer-link{
+    color: hsl(227, 12%, 61%);
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.input{
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 3rem;
+}
+
+input{
+    padding: 1rem;
+    border-radius: 1.6rem;
+    border: none;
+}
+
+input:focus{
+    border: none;
+    outline: none;
+}
+
+input::placeholder{
+    color: hsl(227, 12%, 61%);
+}
+
+.input-btn{
+    color: #fff;
+    font-size: 1.3rem;
+    background-color: hsl(12, 88%, 59%);
+    text-decoration: none;
+    padding: 1rem 1.3rem;
+    border-radius: 1.6rem;
+}
+
+.copyright{
+    font-size: 1.3rem;
+}
