@@ -14,6 +14,27 @@
     .hero-img img{
         width: 100%;
     }
+
+    .overflow{
+        width: 80rem;
+        height: 28rem;
+        overflow-x: hidden;
+        margin: 0 auto;
+        padding-top: 4rem;
+    }
+
+    .indicator{
+        display: block;
+        left: 48%;
+    }
+
+    .btn:nth-child(4){
+        display: none;
+    }
+
+    .none{
+        display: flex;
+    }
 }
 
 @media(max-width: 940px){
@@ -23,6 +44,19 @@
 }
 
 @media(max-width: 880px){
+    .btn:nth-child(3),.btn:nth-child(4){
+        display: inline-block;
+    }
+
+    .indicator{
+        left: 40%;
+        margin-bottom: 1rem;
+    }
+
+    .overflow{
+        width: 40rem;
+    }
+
     .nav{
         padding: 4rem 4rem 3rem 4rem;
     }
@@ -116,7 +150,7 @@
     .footer-input{
         grid-column: 2;
     }
-
+/*
     .testimonial-boxes{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -130,7 +164,7 @@
 
     .testimonial-box{
         max-width: 36rem;
-    }
+    }*/
 
     .section-newsletter{
         padding-top: 6rem;
@@ -164,9 +198,11 @@
 }
 
 @media(max-width: 750px){
-    .testimonial-box{
+    /*.testimonial-box{
         width: 30rem;
-    }
+    }*/
+
+   
 }
 
 @media(max-width: 650px){
@@ -197,6 +233,11 @@
 }
 
 @media(max-width: 510px){
+
+    .section-testimonials{
+        padding: 8rem 0rem 4rem 0rem;
+    }
+
     html{
         font-size: 60%;
     }
@@ -211,6 +252,33 @@
 
     .different-head p{
         font-size: 1.7rem;
+    }
+
+    .overflow{
+        width: 40rem;
+        padding: 4rem 1rem 0rem 1rem;
+    }
+
+    .testimonial-box{
+        width: 36rem;
+        padding: 1.5rem 2rem;;
+    }
+
+    .testimonial-box:nth-child(4){
+        transform: translateX(24px);
+        gap: 3rem;
+    }
+
+    .testimonial-box:nth-child(1){
+        transform: translateX(-16px);
+    }
+
+    .testimonial-box:nth-child(3){
+        transform: translateX(16px);
+    }
+
+    .testimonial-box:nth-child(2){
+        transform: translateX(3px);
     }
 
     .testimonial-box span{
@@ -283,5 +351,24 @@
         top: 90%;
         height: 300%;
         gap: 3rem;
+    }
+
+}
+
+@media(max-width: 400px){
+    .testimonial-box:nth-child(1){
+        transform: translateX(-5px);
+    }
+}
+
+@media(max-width: 361px){
+    html{
+        font-size: 60%;
+    }
+}
+
+@media(max-width: 300px){
+    html{
+        font-size: 57%;
     }
 }
